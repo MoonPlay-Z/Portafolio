@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/curriculum.ico">
+    <title>curriculum</title>
+    <style>
+        body {
+            background-color: #c3c3c9;
+            width: 100%;
+            margin: 0;
+            max-width: 100%;
+        }
+
+        header {
+            background-image: url(IMG/banner.jpg);
+            background-size: cover;
+            width: auto;
+            
+        }
+
+        nav {
+            background-color: #0000004b;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0;
+            color: #86868b;
+            padding: 1rem;
+        }
+
+        .nav {
+            margin: auto;
+            padding: 1rem;
+            color: white;
+            list-style: none;
+            text-decoration: none;
+            justify-content: end;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .nav:hover {
+            transform: scale(1.1);
+            color: azure;
+            background: #86868b21;
+        }
+
+        .perfil {
+            display: flex;
+            justify-content: left;
+            color: white;
+        }
+
+        .img-perfil {
+            position: relative;
+            margin: auto;
+            border: 2px #000000b9 solid;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-right: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h1 {
+
+            color: white;
+            text-align: right;
+            font-size: 3rem;
+        }
+
+
+        footer {
+            background-image: url(IMG/banner.jpg);
+            position: absolute;
+            bottom: 0;
+            margin: auto 0s;
+            margin-top: 2rem;
+            width: 100%;
+            height: 15rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: left;
+        }
+
+        .colum {
+            margin: 0;
+            margin-top: 0;
+            padding: 1rem;
+            background: #ffffffab;
+            border-radius: 5px;
+            margin: 1rem;
+        }
+
+        h2 {
+            margin: auto;
+            font-size: 20px;
+            text-align: center;
+            padding: 0;
+        }
+
+        .formulario {
+            background-color: rgba(255, 255, 255, 0.911);
+            color: black;
+        }
+
+        legend {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 0 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .grid-f {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: auto;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .cont-input {
+            margin: 5px;
+        }
+
+        input {
+            width: 90%;
+            padding: 5px;
+            border: solid white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <a class="nav n1" href="http://">Inicio</a>
+            <a class="nav n2" href="http://">Portafolio</a>
+            <a class="nav n3" href="http://">Contacto</a>
+        </nav>
+
+        <div class="perfil">
+            <img class="img-perfil" src="IMG/Foto-perfil.jpg" alt="Foto-perfil" height="100" width="100">
+            <h1>Juan Arcila</h1>
+        </div>
+    </header>
+    <div class="grid">
+        <div class="colum colum-1">
+            <table>
+                <h2>Informacion Personal</h2>
+                <tr>
+                    <th>Cedula:</th>
+                    <td>30.054.284</td>
+                </tr>
+                <tr>
+                    <th>Telefono:</th>
+                    <td>+58 4127723148</td>
+                </tr>
+                <tr>
+                    <th>Correo:</th>
+                    <td>arcila.juan10@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Ubicacion:</th>
+                    <td>Portuguesa, Venezuela</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="colum colum-2">
+            <table>
+                <h2>Descripcion Personal</h2>
+                <tr>
+                    <th>Conociomientos de Programacion</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <footer>
+        <form action="">
+            <fieldset class="formulario">
+                <legend>Formulario</legend>
+
+                <div class="grid-f">
+                    <div class="cont-input">
+                        <label for="">Nombre: </label>
+                        <input type="text" placeholder="Nombre">
+
+                    </div>
+                    <div class="cont-input">
+                        <label for="">Apellido:</label>
+                        <input type="text" placeholder="Apellido">
+
+                    </div>
+                    <div class="cont-input">
+                        <label for="">Email:</label>
+                        <input type="email" placeholder="Email">
+
+                    </div>
+                    <div class="cont-input">
+                        <label for="">Empresa:</label>
+                        <input type="text" placeholder="Empresa">
+
+                    </div>
+                    <div class="cont-input">
+                        <textarea name="" id=""></textarea>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </footer>
+
+</body>
+
+</html>
