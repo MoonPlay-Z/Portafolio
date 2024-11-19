@@ -2,33 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="shortcut icon" href="IMG/curriculum.ico">
     <title>curriculum</title>
 
     <style>
         body {
-            background-color: #c3c3c9;
-            width: 100%;
+            background-color: #fdfdfd;
             margin: 0;
-            max-width: 100%;
             min-width: 400px;
+            
         }
 
         header {
             background-image: url(IMG/banner.jpg);
             background-size: cover;
-            width: auto;
-
+            box-shadow: 2px 2px 10px 0.2px;
+            width: 100%;
         }
 
         nav {
             background-color: #0000004b;
             display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin: 0;
+            
+            margin: auto;
             color: #86868b;
             padding: 1rem;
         }
@@ -53,7 +50,6 @@
             display: grid;
             justify-content: center;
             color: white;
-
         }
 
         .img-perfil {
@@ -61,7 +57,6 @@
             margin-top: 1rem;
             border: 2px #000000b9 solid;
             border-radius: 10px;
-
         }
 
         h1 {
@@ -71,13 +66,12 @@
             text-align: right;
             -webkit-text-stroke-color: rgb(255, 255, 255);
             -webkit-text-stroke-width: 2px;
-
         }
 
         .grid {
             display: grid;
             text-align: left;
-
+            
         }
 
         @media (min-width: 680px) {
@@ -99,10 +93,7 @@
             .grid {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-
             }
-
-
         }
 
         @media (min-width: 1065px) {
@@ -115,10 +106,7 @@
             .grid {
                 display: grid;
                 grid-template-columns: 30% 70%;
-
             }
-
-
         }
 
         .colum {
@@ -129,6 +117,7 @@
             border-radius: 5px;
             margin: 1rem;
             overflow: auto;
+            box-shadow: 2px 2px 10px 0.2px;
         }
 
         h2 {
@@ -141,6 +130,7 @@
         .formulario {
             background-color: rgba(255, 255, 255, 0.911);
             color: black;
+            box-shadow: 4px 4px 10px 0.2px;
         }
 
         legend {
@@ -169,18 +159,16 @@
             border-radius: 8px;
         }
 
-        footer {
+        .footer {
             background-image: url(IMG/banner.jpg);
             display: flex;
             justify-content: center;
             bottom: 0;
-
-            width: 100%;
-
-            margin: auto 0s;
+            margin: auto;
             margin-top: 2rem;
             height: 15rem;
             color: white;
+            
             align-items: center;
             text-align: center;
         }
@@ -188,23 +176,22 @@
 </head>
 
 <body>
+    <!-- <nav>
+        <a class="nav n1" href="#">Inicio</a>
+        <a class="nav n2" href="#">Portafolio</a>
+        <a class="nav n3" href="#">Contacto</a>
+    </nav> -->
     <header>
-
-        <nav>
-            <a class="nav n1" href="http://">Inicio</a>
-            <a class="nav n2" href="http://">Portafolio</a>
-            <a class="nav n3" href="http://">Contacto</a>
-        </nav>
-
         <div class="perfil">
             <img class="img-perfil" src="IMG/Foto-perfil.jpg" alt="Foto-perfil" height="100" width="100">
-            <h1>I m a Freelancer</h1>
+            <h1>I am a Freelancer</h1>
         </div>
     </header>
-    <div class="grid">
-        <div class="colum colum-1">
+
+    <main class="grid">
+        <section class="colum colum-1">
+            <h2>Información Personal</h2>
             <table>
-                <h2>Informacion Personal</h2>
                 <tr>
                     <th>Nombre:</th>
                     <td>Juan Alfonso</td>
@@ -214,7 +201,7 @@
                     <td>Arcila Castillo</td>
                 </tr>
                 <tr>
-                    <th>Telefono:</th>
+                    <th>Teléfono:</th>
                     <td>+58 4127723148</td>
                 </tr>
                 <tr>
@@ -222,68 +209,60 @@
                     <td>arcila.juan10@gmail.com</td>
                 </tr>
                 <tr>
-                    <th>Ubicacion:</th>
+                    <th>Ubicación:</th>
                     <td>Portuguesa, Venezuela</td>
                 </tr>
-
             </table>
-        </div>
-        <div class="colum colum-2">
+        </section>
+        <section class="colum colum-2">
+            <h2>Descripción Profesional</h2>
+            <p>Soy un desarrollador web apasionado con una sólida experiencia en PHP, JavaScript, React, React Native, y MySQL. Con varios años de experiencia en la creación de aplicaciones web y móviles, me especializo en desarrollar soluciones eficientes y escalables que proporcionen una excelente experiencia de usuario.</p>
+        </section>
+    </main>
 
-            <h2>Descripcion Profecional</h2>
-            <tr>
-                <p>Soy un desarrollador web apasionado con una sólida experiencia en PHP, JavaScript, React, React
-                    Native y MySQL. Con varios años de experiencia en la creación de aplicaciones web y móviles, me
-                    especializo en desarrollar soluciones eficientes y escalables que proporcionen una excelente
-                    experiencia de usuario.</p>
-            </tr>
-
-        </div>
-
-    </div>
-    <footer>
-        <form action="">
+    <footer class="footer">
+        <form action="#">
             <fieldset class="formulario">
                 <legend>Formulario</legend>
-
                 <div class="grid-f">
                     <div class="cont-input">
-                        <label for="">Nombre: </label>
-                        <input type="text" placeholder="Nombre">
-
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
                     </div>
                     <div class="cont-input">
-                        <label for="">Apellido:</label>
-                        <input type="text" placeholder="Apellido">
-
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
                     </div>
                     <div class="cont-input">
-                        <label for="">Email:</label>
-                        <input type="email" placeholder="Email">
-
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
                     </div>
                     <div class="cont-input">
-                        <label for="">Empresa:</label>
-                        <input type="text" placeholder="Empresa">
-
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" id="empresa" name="empresa" placeholder="Empresa">
                     </div>
                     <div class="cont-input">
-                        <textarea name="" id=""></textarea>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <div class="cont-input">
                         <button type="submit">Enviar</button>
                     </div>
                 </div>
-
             </fieldset>
         </form>
     </footer>
+
     <script>
-    var tituloOriginal = document.title; // Lo guardamos para restablecerlo
-        window.onblur = function () { // Si el usuario se va a otro lado...
-            document.title = "Hey, vuelve aquí 😁";// Cambiamos el título
+        var tituloOriginal = document.title;
+        window.onblur = function () {
+            document.title = "Hey, vuelve aquí 😁";
         }
 
         window.onfocus = function () {
-            document.title = tituloOriginal; // Si el usuario vuelve restablecemos el título
+            document.title = tituloOriginal;
+
+        
         }
     </script>
 </body>
