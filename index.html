@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="IMG/curriculum.ico">
     <title>curriculum</title>
+
     <style>
         body {
             background-color: #c3c3c9;
@@ -49,70 +50,77 @@
         }
 
         .perfil {
-            display: flex;
-            justify-content: left;
+            display: grid;
+            justify-content: center;
             color: white;
+
         }
 
         .img-perfil {
-            position: relative;
             margin: auto;
+            margin-top: 1rem;
             border: 2px #000000b9 solid;
             border-radius: 10px;
-            margin-left: 30px;
-            margin-right: 1.5rem;
-            margin-bottom: 10px;
-            text-align: center;
+
         }
 
         h1 {
-
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3rem;
             color: white;
             text-align: right;
-            font-size: 3rem;
-        }
+            -webkit-text-stroke-color: rgb(255, 255, 255);
+            -webkit-text-stroke-width: 2px;
 
-
-        footer {
-            background-image: url(IMG/banner.jpg);
-            position: absolute;
-            bottom: 0;
-            margin: auto 0s;
-            margin-top: 2rem;
-            width: 100%;
-            height: 15rem;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
         }
 
         .grid {
             display: grid;
             text-align: left;
-            
+
         }
 
         @media (min-width: 680px) {
+            .perfil {
+                display: flex;
+                justify-content: left;
+                color: white;
+            }
+
+            .img-perfil {
+                margin: auto;
+                border: 2px #000000b9 solid;
+                border-radius: 10px;
+                margin-left: 30px;
+                margin-right: 1.5rem;
+                margin-bottom: 10px;
+            }
+
             .grid {
                 display: grid;
-                grid-template-columns: repeat(2,1fr);
-                
+                grid-template-columns: repeat(2, 1fr);
+
             }
 
 
         }
+
         @media (min-width: 1065px) {
+            .perfil {
+                display: flex;
+                justify-content: left;
+                color: white;
+            }
+
             .grid {
                 display: grid;
                 grid-template-columns: 30% 70%;
-                
+
             }
 
 
         }
-        
+
         .colum {
             margin: 0;
             margin-top: 0;
@@ -160,6 +168,22 @@
             border: solid white;
             border-radius: 8px;
         }
+
+        footer {
+            background-image: url(IMG/banner.jpg);
+            display: flex;
+            justify-content: center;
+            bottom: 0;
+
+            width: 100%;
+
+            margin: auto 0s;
+            margin-top: 2rem;
+            height: 15rem;
+            color: white;
+            align-items: center;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -201,13 +225,15 @@
             </table>
         </div>
         <div class="colum colum-2">
-            <table>
-                <h2>Descripcion Personal</h2>
-                <tr>
-                    <th>Conociomientos de Programacion:</th>
-                    <td>PHP, JavaScript, React, React Native, MYSQL </td>
-                </tr>
-            </table>
+
+            <h2>Descripcion Profecional</h2>
+            <tr>
+                <p>Soy un desarrollador web apasionado con una sólida experiencia en PHP, JavaScript, React, React
+                    Native y MySQL. Con varios años de experiencia en la creación de aplicaciones web y móviles, me
+                    especializo en desarrollar soluciones eficientes y escalables que proporcionen una excelente
+                    experiencia de usuario.</p>
+            </tr>
+
         </div>
 
     </div>
