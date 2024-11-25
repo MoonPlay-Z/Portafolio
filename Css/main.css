@@ -1,4 +1,5 @@
 :root {
+    ---fuente_colum: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     ---color_principal: #0000004b;
     ---color_blanco: #fdfdfd;
 }
@@ -31,7 +32,7 @@ header {
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(---fuente_colum);
     font-size: 3rem;
     color: white;
     text-align: right;
@@ -46,7 +47,7 @@ h1 {
 }
 
 .colum {
-
+    font-family: var(---fuente_colum);
     margin: 0;
     margin-top: 0;
     padding: 1rem;
@@ -86,8 +87,7 @@ h1 {
     }
 
     .colum-3 {
-        display: flex;
-        justify-content: space-between;
+        
         grid-column: 1/3;
         grid-row: 2/2;
 
@@ -106,13 +106,15 @@ h1 {
         display: grid;
         grid-template-columns: 30% 70%;
     }
-
+    .colum-3 {
+        letter-spacing: 2rem;
+    }
 }
 
 
 .png {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 h2 {
@@ -126,10 +128,12 @@ h2 {
     margin: 2rem auto;
     background-color: rgba(255, 255, 255, 0.911);
     color: black;
+    border-radius: 5px;
     box-shadow: 4px 4px 10px 0.2px;
 }
 
 legend {
+    
     border: 2px solid black;
     border-radius: 10px;
     padding: 0 10px;
