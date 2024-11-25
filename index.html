@@ -2,185 +2,13 @@
 <html lang="en">
 
 <head>
-    
-    <link rel="shortcut icon" href="IMG/curriculum.ico">
     <title>curriculum</title>
-
-    <style>
-        body {
-            background-color: #fdfdfd;
-            margin: 0;
-            min-width: 400px;
-            
-        }
-
-        header {
-            background-image: url(IMG/banner.jpg);
-            background-size: cover;
-            box-shadow: 2px 2px 10px 0.2px;
-            width: 100%;
-        }
-
-        nav {
-            background-color: #0000004b;
-            display: flex;
-            
-            margin: auto;
-            color: #86868b;
-            padding: 1rem;
-        }
-
-        .nav {
-            margin: auto;
-            padding: 1rem;
-            color: white;
-            list-style: none;
-            text-decoration: none;
-            justify-content: end;
-            transition: transform 0.2s, background 0.2s;
-        }
-
-        .nav:hover {
-            transform: scale(1.1);
-            color: azure;
-            background: #86868b21;
-        }
-
-        .perfil {
-            display: grid;
-            justify-content: center;
-            color: white;
-        }
-
-        .img-perfil {
-            margin: auto;
-            margin-top: 1rem;
-            border: 2px #000000b9 solid;
-            border-radius: 10px;
-        }
-
-        h1 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 3rem;
-            color: white;
-            text-align: right;
-            -webkit-text-stroke-color: rgb(255, 255, 255);
-            -webkit-text-stroke-width: 2px;
-        }
-
-        .grid {
-            display: grid;
-            text-align: left;
-            
-        }
-
-        @media (min-width: 680px) {
-            .perfil {
-                display: flex;
-                justify-content: left;
-                color: white;
-            }
-
-            .img-perfil {
-                margin: auto;
-                border: 2px #000000b9 solid;
-                border-radius: 10px;
-                margin-left: 30px;
-                margin-right: 1.5rem;
-                margin-bottom: 10px;
-            }
-
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 1065px) {
-            .perfil {
-                display: flex;
-                justify-content: left;
-                color: white;
-            }
-
-            .grid {
-                display: grid;
-                grid-template-columns: 30% 70%;
-            }
-        }
-
-        .colum {
-            margin: 0;
-            margin-top: 0;
-            padding: 1rem;
-            background: #ffffffab;
-            border-radius: 5px;
-            margin: 1rem;
-            overflow: auto;
-            box-shadow: 2px 2px 10px 0.2px;
-        }
-
-        h2 {
-            margin: auto;
-            font-size: 20px;
-            text-align: center;
-            padding: 0;
-        }
-
-        .formulario {
-            background-color: rgba(255, 255, 255, 0.911);
-            color: black;
-            box-shadow: 4px 4px 10px 0.2px;
-        }
-
-        legend {
-            border: 2px solid black;
-            border-radius: 10px;
-            padding: 0 10px;
-            background-color: rgb(255, 255, 255);
-        }
-
-        .grid-f {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin: auto;
-            padding: 1rem;
-            text-align: left;
-        }
-
-        .cont-input {
-            margin: 5px;
-        }
-
-        input {
-            width: 90%;
-            padding: 5px;
-            border: solid white;
-            border-radius: 8px;
-        }
-
-        .footer {
-            background-image: url(IMG/banner.jpg);
-            display: flex;
-            justify-content: center;
-            bottom: 0;
-            margin: auto;
-            margin-top: 2rem;
-            height: 15rem;
-            color: white;
-            
-            align-items: center;
-            text-align: center;
-        }
-    </style>
+    <link rel="shortcut icon" href="IMG/curriculum.ico">
+    <script src="Js/mensaje_de_pestaña.js"></script>
+    <link rel="stylesheet" href="Css/main.css">
 </head>
 
 <body>
-    <!-- <nav>
-        <a class="nav n1" href="#">Inicio</a>
-        <a class="nav n2" href="#">Portafolio</a>
-        <a class="nav n3" href="#">Contacto</a>
-    </nav> -->
     <header>
         <div class="perfil">
             <img class="img-perfil" src="IMG/Foto-perfil.jpg" alt="Foto-perfil" height="100" width="100">
@@ -216,11 +44,23 @@
         </section>
         <section class="colum colum-2">
             <h2>Descripción Profesional</h2>
-            <p>Soy un desarrollador web apasionado con una sólida experiencia en PHP, JavaScript, React, React Native, y MySQL. Con varios años de experiencia en la creación de aplicaciones web y móviles, me especializo en desarrollar soluciones eficientes y escalables que proporcionen una excelente experiencia de usuario.</p>
+            <p>Soy un desarrollador web apasionado con una sólida experiencia en PHP, JavaScript, TypeScript, React, React Native, Angular, Vuejs y
+                MySQL. Con varios años de experiencia en la creación de aplicaciones web y móviles, me especializo en
+                desarrollar soluciones eficientes y escalables que proporcionen una excelente experiencia de usuario.
+            </p>
+        </section>
+        <section class="colum colum-3">
+            <img class="png" src="IMG/PNG/JavaScript.png" alt="JS" srcset="">
+            <img class="png" src="IMG/PNG/React.png" alt="React" srcset="">
+            <img class="png" src="IMG/PNG/PHP.png" alt="PHP" srcset="">
+            <img class="png" src="IMG/PNG/NodeJs.png" alt="Njs" srcset="">
+            <img class="png" src="IMG/PNG/TypeScript.png" alt="TS" srcset="">
+            <img class="png" src="IMG/PNG/Angular.png" alt="Angular" srcset="">
+            <img class="png" src="IMG/PNG/Vuejs.png" alt="Vj" srcset="">
         </section>
     </main>
 
-    <footer class="footer">
+    <div class="footer">
         <form action="#">
             <fieldset class="formulario">
                 <legend>Formulario</legend>
@@ -243,7 +83,8 @@
                     </div>
                     <div class="cont-input">
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <textarea class="input" id="mensaje" name="mensaje"
+                            placeholder="Escribe tu mensaje aquí..."></textarea>
                     </div>
                     <div class="cont-input">
                         <button type="submit">Enviar</button>
@@ -251,20 +92,8 @@
                 </div>
             </fieldset>
         </form>
-    </footer>
+    </div>
 
-    <script>
-        var tituloOriginal = document.title;
-        window.onblur = function () {
-            document.title = "Hey, vuelve aquí 😁";
-        }
-
-        window.onfocus = function () {
-            document.title = tituloOriginal;
-
-        
-        }
-    </script>
 </body>
 
 </html>
